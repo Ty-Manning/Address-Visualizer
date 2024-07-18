@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project generates a visualization of US coverage areas based on given addresses using geospatial data and OpenCage API for geocoding. The resulting map highlights areas within a 60-mile radius of each address in blue and areas outside this radius in red.
+This project generates a visualization of US coverage areas based on given addresses using geospatial data and OpenCage API for geocoding. The resulting map highlights areas within a 60-mile radius of each address but this value is easily changed.
 
 ## Requirements
 
