@@ -2,7 +2,7 @@ from opencage.geocoder import OpenCageGeocode
 import folium
 
 # Your OpenCage API key
-api_key = '32862a6769b14178a5568b45d6b50b64'
+api_key = 'XXX'
 
 # Function to read geocode cache from file
 def read_geocode_cache(filename):
