@@ -1,3 +1,4 @@
 *.html        # Ignores all .html files
 addresses.txt
 geocode_cache.txt 
+address_getter.py #this is the file i used to grab my addresses.
