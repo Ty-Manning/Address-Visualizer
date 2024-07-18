@@ -1,0 +1,3 @@
+*.html        # Ignores all .html files
+addresses.txt
+geocode_cache.txt 
