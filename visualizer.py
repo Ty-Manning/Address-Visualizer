@@ -28,7 +28,7 @@ def write_geocode_cache(filename, address, lng, lat):
         file.write(f"{address}\t{lng}\t{lat}\n")
     print(f"Added '{address}' to cache")
 
-# Function to geocode addresses using OpenCage with caching
+# Function to Check cache and geocode
 def geocode_address(address, geocoder, cache, cache_filename):
     if address in cache:
         lng, lat = cache[address]
@@ -51,22 +51,22 @@ def geocode_address(address, geocoder, cache, cache_filename):
             print(f"Error geocoding address {address}: {str(e)}")
             return None
 
-# Read addresses from file
+# Read addresses from address file
 with open('addresses.txt', 'r') as file:
     addresses = [line.strip() for line in file if line.strip()]
 
 print(f"Read {len(addresses)} addresses from file.")
 
-# Geocoder instance
+# create geocoder instance
 geocoder = OpenCageGeocode(api_key)
 
 # Read geocode cache
 geocode_cache = read_geocode_cache('geocode_cache.txt')
 
-# Create a folium map centered in the US
-m = folium.Map(location=[39.8283, -98.5795], zoom_start=5)  # Increased zoom level for better visualization
+# Create a folium map centered somewhere in the US
+m = folium.Map(location=[39.8283, -98.5795], zoom_start=5)  # i have Increased zoom level for better visualization
 
-# Add addresses to the map as red dots and draw circles (5-mile radius)
+# Add addresses to the map as red dots and draw circles (optional)
 for address in addresses:
     if address not in geocode_cache:
         lng, lat = geocode_address(address, geocoder, geocode_cache, 'geocode_cache.txt')
