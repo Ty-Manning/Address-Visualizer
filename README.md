@@ -44,3 +44,13 @@ This project uses:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+### Support Address Visualizer
+
+I work on **Address Visualizer** for fun, and any support is appreciated. If you'd like to contribute, you can use the following methods:
+
+- **BTC**: `bc1q9x6zrts3prgankxs3sk5qpt942c3039vay9m0l`
+- **Venmo**: `TyManning22`
+
+Thank you for your generosity!
+
